@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;500&family=Roboto:wght@100;400;500&display=swap');
+
+.card p, .project-summary {
+    
+    line-height: 20px;
+    font-family: sans-serif;
+    
+  }
+  
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #00838d;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .card1 {
+    display: block;
+    position: relative;
+    
+    background-color: #f2f8f9;
+    border-radius: 10px;
+    padding: 32px 24px;
+    /* margin: 12px; */
+    /* margin-right: 0px; */
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+    
+  }
+  
+  .card1:hover:before {
+    transform: scale(37);
+  }
+  
+  .card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+
+  }  
+
+  .card1:hover ul li {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card{
+    /* border: solid; */
+    height: 350px;
+    position: relative;
+  }
+
+  .card-arrangment{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 80px;
+    /* border: solid; */
+    padding: 50px;
+    margin-bottom: 0px;;
+    /* width: 100%; */
+    /* height: 300px; */
+    position: relative;
+
+  }
+  
+  .card1{
+    /* border: solid; */
+    /* position: relative; */
+    padding: 16px;
+    height: 100%;
+    margin:0px;
+    /* width: 1000px; */
+  }
+
+  .project-name{
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .tech-stack-list{
+    display: inline;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 13px;
+  }
+
+  p{
+    font-family: sans-serif;
+  }
+
+  .project-summary{
+    font-size: 14px;
+    list-style-type: square;
+  }
+
+  .project-summary::marker{
+    font-size: 1.1rem;
+    
+  }
+ .project-name{
+    font-size: 25px;;
+ }
+
+ .visit-btn{
+  position: absolute;
+  left: 10%;
+  right: 55%;
+  padding-top: 10px;;
+  padding-bottom: 10px;
+  bottom: 10%;
+  background-color: rgb(252, 211, 10);
+  font-size: 15px;
+  font-weight: 700;
+  font-family:Montserrat;
+  border: none;
+  color: rgb(39, 38, 38);
+  cursor: pointer;
+  transition:0.4s;
+ }
+
+ .visit-btn:hover{
+  background-color: white;
+
+ }
+.project-heading{
+  font-family: sans-serif;
+  font-size: 50px;
+  padding-left: 53px;
+  margin-bottom: 0px;
+  color: black;
+}
+.project-div{
+  background-color: rgb(230, 230, 230);
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+/* ===================================*/
+/* navbar CSS */
+
+.navbar-div{
+  margin: 0px;
+  display:table;
+  width:100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/background\ image.avif");;
+  background-position:center top;
+  height:650px;
+  
+ 
+  
+  
+}
+
+.my-name{
+  color: white;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 100px;;
+  position: absolute;
+  top: 20%;
+  left: 26%;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4);
+  border-radius: 10px; 
+   
+}
+
+
+
+/* ======================================
+Education css */
+
+.education-div{
+  background-color: rgb(26, 25, 25);
+  color: white;
+}
+
+.education-arrangment{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.heading-div{
+  display: relative;
+}
+
+.education-heading{
+  font-family: sans-serif;
+  font-size: 50px;;
+  font-weight: bolder;
+  padding-left: 60px;;
+}
+
+.line{
+  font-weight: bold;
+  font-size: 250px;;
+  display: inline-block;
+  padding-left: 70px;;
+  margin-top: 100px;;
+  margin-bottom: 50px;;
+}
+.education-detail{
+  margin-top: 10px;;
+  padding-top: 15px;;
+}
+
+.education-detail p{
+  font-family: sans-serif;
+}
+
+.standard{
+  font-size: 25px;;
+  font-weight: bold;
+  margin-bottom: 0px;;
+}
+.year{
+  margin-top: 4px;;
+  font-size: 14px;
+  color: rgb(196, 195, 195);
+} 
+.school{
+  margin-top: 7px;;
+  margin-bottom: 0px;
+  font-size: 2;
+  color: rgb(196, 195, 195);
+}
+.cgpa{
+  background-color: rgb(219, 29, 29);
+  display: inline;
+  padding: 5px;;
+  border-radius: 3px;;
+}
+
+.education-list{
+  list-style-type: square;
+  
+}
+
+.education-list::marker{
+  font-size: 2rem;
+  color: red;
+}
+
+/* =======================================
+internship css */
+
+.intern-arrangment{
+  /* background-color: aqua; */
+  font-family: sans-serif;
+  padding: 20px;;
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  padding-bottom: 40px;;
+  
+  color: white;
+  
+}
+
+.company{
+  font-size: 30px;;
+  font-weight: bold;
+  margin-bottom: 0px;;
+  
+}
+
+.location{
+  margin-top: 3px;;
+  padding-left: 1px;;
+  font-size: 14px;;
+  margin-bottom: 0px;;
+  color: rgb(196, 195, 195);
+  
+}
+.role{
+  margin-top: 12px;;
+  margin-bottom: 0px;;
+  background: rgb(219, 29, 29);
+  display: inline-block;
+  padding: 5px;
+  padding-left: 7px;;
+  padding-right: 7px;
+  font-family: Montserrat;
+  border-radius: 3px;;
+}
+.date{
+  margin-top: 3px;;
+  font-size: 14px;
+  color: rgb(196, 195, 195);;
+}
+.intern-list{
+  margin-top: 30px;
+}
+
+.intern-list ul{
+  list-style-type: square;
+  
+}
+
+.list-item::marker{
+  font-size: 20px;
+  color: red;
+}
+
+.internship-heading{
+  font-size: 50px;;
+  font-weight: bold;
+  padding-left: 50px;
+  margin-bottom: 0px;;
+  color: white;
+  margin-top: 0px;
+}
+
+.intern-div{
+  background-color: rgb(28, 26, 26);
+  margin-top: 0;
+  padding-top: 40px;;
+  padding-bottom: 80px;
+}
+.intern-summary{
+  color: rgb(216, 215, 215);;;
+}
+.about_intern{
+  border:solid;
+  border-color: red;
+  position: relative;
+}
+.intern-btn{
+  font-size: 60px;;
+  border-radius: 20px;;
+  text-align: center;
+  background-color:rgb(28, 26, 26);
+  color: red;
+  font-weight: bold;
+  border: none;
+  position: absolute;
+  right: 0px;;
+  bottom: 120px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.intern-btn:hover{
+  opacity:0.8;
+}
+
+.certificate-btn{
+    margin-top: 25px;
+    position: absolute;
+    left: 4%;
+    padding-top: 10px;;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 14px;;
+    /* bottom: 10%; */
+    background-color: rgb(252, 211, 10);;
+    font-size: 15px;
+    font-weight: 700;
+    font-family:Montserrat;
+    border: none;
+    color: rgb(39, 38, 38);
+    cursor: pointer;
+    transition:0.4s;
+
+}
+.certificate-btn:hover{
+  background-color: white;
+}
+
+/* ==========================================
+achivemnt css */
+
+
+.achivement-div{
+  background-color: black;
+  color: white;
+}
+
+.achievment-arrangment{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;;
+  column-gap: 50px;;
+}
+
+.achivement-heading{
+  font-size: 50px;
+  font-weight: bold;
+}
+.achivement-list{
+  list-style-type: square;
+}
+
+.achivement-list li::marker{
+  font-size: 20px;
+  color: red;
+}
+
+/* ======================
+sidebar css */
+
+.sidebar-div{
+  background-color: white;
+  position: fixed;
+  top: 40px;
+  right: 37px;
+  z-index: 5;;
+  padding: 10px;;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 10px;;
+  box-shadow: 0px 0px 10px  rgb(0, 0, 0);
+
+}
+
+.icon{
+  height:30px;;
+  padding-bottom: 5px;;  
+  
+}
+
+
+
+.icon:hover{
+  border-style: solid;
+  border-width: 0px 0px 3px 0px ;
+  border-color: orangered;
+}
