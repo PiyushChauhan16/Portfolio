@@ -3,7 +3,6 @@ import Projects from "./Projects"
 import NavBar from "./NavBar"
 import Education from './Education'
 import Internship from './Internship'
-import Break from './Break'
 import Skills from './Skills'
 import Achivements from './achivements'
 import Sidebar from './Sidebar'
