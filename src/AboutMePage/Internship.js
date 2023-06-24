@@ -31,7 +31,7 @@ const Internship = () => {
                     )
                 })}
                 </ul>
-                <button className = "certificate-btn"><a style={{color:"black"}} href={intern.certificate}>CERTIFICATE</a></button>
+                <button className = "certificate-btn"><a style={{color:"black", textDecoration:"none"}} href={intern.certificate}>CERTIFICATE</a></button>
             </div>           
         </div>
 

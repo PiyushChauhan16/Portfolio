@@ -35,7 +35,7 @@ const MakeCards = ({project, choice=1}) => {
             </div>
 
             <div>
-                {choice === 1 && (<button className='visit-btn'><a style={{color:"black"}} href={project.link}>VISIT PROJECT</a> </button>)}
+                {choice === 1 && (<a style={{color:"black", textDecoration:"none"}} href={project.link}><button className='visit-btn'>VISIT PROJECT </button></a>)}
             </div>
             
             

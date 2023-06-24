@@ -146,10 +146,11 @@
 
  .visit-btn{
   position: absolute;
-  left: 10%;
-  right: 55%;
+  left: 8%;
   padding-top: 10px;;
   padding-bottom: 10px;
+  padding-left: 15px;;
+  padding-right: 15px;;
   bottom: 10%;
   background-color: rgb(252, 211, 10);
   font-size: 15px;
@@ -159,6 +160,7 @@
   color: rgb(39, 38, 38);
   cursor: pointer;
   transition:0.4s;
+  max-width: 400px;
  }
 
  .visit-btn:hover{
@@ -193,6 +195,10 @@
       position: relative;
   
     }
+
+    .card1:hover:before {
+      transform: scale(100);
+    }
   }
 
   @media only screen and (max-width: 700px){
@@ -206,15 +212,38 @@
       min-height: 250px;
     }
 
-    .visit-btn{
+    /* .visit-btn{
       font-size: 14px;
       padding: 8px 5px 8px 5px;
       right: 140px;;
       left:20px;
+    } */
+
+    .card1:hover:before {
+      transform: scale(70);
     }
   }
 
+  @media only screen and (max-width: 1480px){
+    .card-arrangment{
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    /* .card{
+      min-width: 400px;
+    } */
+  }
 
+  @media only screen and (max-width: 1054px){
+    .card-arrangment{
+      grid-template-columns: 1fr;;
+    }
+
+    .card1:hover:before {
+      transform: scale(100);
+    }
+
+  }
 
 /* ===================================*/
 /* navbar CSS */
@@ -240,6 +269,7 @@
   position: absolute;
   top: 20%;
   left: 26%;
+  right: 26%;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4);
   border-radius: 10px; 
