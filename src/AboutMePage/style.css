@@ -269,7 +269,7 @@
   position: absolute;
   top: 20%;
   left: 26%;
-  right: 26%;
+  right: 16%;
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4);
   border-radius: 10px; 
@@ -298,6 +298,13 @@
 @media only screen and (max-width: 700px){
   .my-name{
     font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 1480px){
+  .my-name{
+    left: 20%;
+    right: 10%;
   }
 }
 
