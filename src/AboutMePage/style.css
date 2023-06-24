@@ -83,6 +83,11 @@
     /* border: solid; */
     height: 350px;
     position: relative;
+    min-width: 450px;;
+  }
+
+  .short-card{
+    height: 230px;
   }
 
   .card-arrangment{
@@ -98,6 +103,8 @@
     position: relative;
 
   }
+
+  
   
   .card1{
     /* border: solid; */
@@ -160,6 +167,7 @@
  }
 .project-heading{
   font-family: sans-serif;
+  font-weight: bold;
   font-size: 50px;
   padding-left: 53px;
   margin-bottom: 0px;
@@ -170,6 +178,43 @@
   padding-top: 10px;
   padding-bottom: 50px;
 }
+
+  @media only screen and (max-width: 768px){
+    .card-arrangment{
+      display: grid;
+      grid-template-columns: 1fr;
+      column-gap: 40px;
+      row-gap: 80px;
+      /* border: solid; */
+      padding: 50px;
+      margin-bottom: 0px;;
+      /* width: 100%; */
+      /* height: 300px; */
+      position: relative;
+  
+    }
+  }
+
+  @media only screen and (max-width: 700px){
+    .card{
+      min-width: 300px;
+      min-height: 500px;
+
+    }
+
+    .short-card{
+      min-height: 250px;
+    }
+
+    .visit-btn{
+      font-size: 14px;
+      padding: 8px 5px 8px 5px;
+      right: 140px;;
+      left:20px;
+    }
+  }
+
+
 
 /* ===================================*/
 /* navbar CSS */
@@ -198,9 +243,33 @@
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4);
   border-radius: 10px; 
+  display: inline-block;
    
 }
 
+@media only screen and (max-width: 768px){
+  
+  .my-name{
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 80px;;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 70px;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4);
+    border-radius: 10px; 
+     
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .my-name{
+    font-size: 70px;
+  }
+}
 
 
 /* ======================================
@@ -226,14 +295,7 @@ Education css */
   padding-left: 60px;;
 }
 
-.line{
-  font-weight: bold;
-  font-size: 250px;;
-  display: inline-block;
-  padding-left: 70px;;
-  margin-top: 100px;;
-  margin-bottom: 50px;;
-}
+
 .education-detail{
   margin-top: 10px;;
   padding-top: 15px;;
@@ -274,6 +336,39 @@ Education css */
 .education-list::marker{
   font-size: 2rem;
   color: red;
+}
+
+@media only screen and (max-width: 700px){
+  .education-arrangment{
+    grid-template-columns: 1fr;
+    padding-left: 30px;;
+  }
+
+  .line{    
+    font-size: 0px;;    
+  }
+
+  .education-heading{
+    font-family: sans-serif;
+    font-size: 45px;;
+    font-weight: bolder;
+    padding-left: 37px;;
+    margin-bottom: 0px;
+  }
+
+  .standard{
+    font-size: 18px;
+  }
+
+  .school{
+    font-size: 14px;
+  }
+  .year{
+    font-size: 14px;
+  }
+  .cgpa{
+    font-size: 14px;
+  }
 }
 
 /* =======================================
@@ -401,6 +496,32 @@ internship css */
   background-color: white;
 }
 
+@media only screen and (max-width: 700px){
+  .intern-arrangment{
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-btn{
+    left:13%;
+  }
+
+  .intern-btn{
+    font-size: 40px;
+    top:10px;
+    right: 0px;
+    padding: 0px;
+    
+  }
+  
+  .internship-heading{
+    font-size: 45px;
+  }
+  .company{
+    font-size: 29px;
+  }
+  
+}
+
 /* ==========================================
 achivemnt css */
 
@@ -428,6 +549,15 @@ achivemnt css */
 .achivement-list li::marker{
   font-size: 20px;
   color: red;
+}
+
+@media only screen and (max-width: 768px){
+  .achievment-arrangment{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px;;
+    column-gap: 50px;;
+  }
 }
 
 /* ======================
@@ -460,4 +590,29 @@ sidebar css */
   border-style: solid;
   border-width: 0px 0px 3px 0px ;
   border-color: orangered;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar-div{    
+    right: 30%;  
+    padding: 10px;    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;  
+  }
+
+  .icon{
+    height:25px;;
+    padding-bottom: 5px;;  
+    
+  }
+  
+}
+
+@media only screen and (max-width: 700px){
+  .sidebar-div{    
+    right: 15%;  
+    padding: 8px 15px 4px 15px;    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;  
+  }
 }

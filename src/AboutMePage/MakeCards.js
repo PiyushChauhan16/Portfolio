@@ -5,9 +5,9 @@ const MakeCards = ({project, choice=1}) => {
   return (
     <div>
             
-        <div class="card">
-        <div class="card1">
-            <p class = "project-name">{project.topic}</p>
+        <div className={"card" + (choice === 1 ? "" : " short-card")}>
+        <div className="card1">
+            <p className = "project-name">{project.topic}</p>
             {choice === 1 && project.tech_stack.map((curr)=>{
                 return (
                     <p class = "tech-stack-list">{"• " + curr +" "}</p>
@@ -23,8 +23,8 @@ const MakeCards = ({project, choice=1}) => {
             </ul>
                 
            
-            <div class="go-corner" href="#">
-            <div class="go-arrow">
+            <div className="go-corner" href="#">
+            <div className="go-arrow">
                 <button style={{
                     background:"transparent",
                     color: "white",
@@ -33,7 +33,11 @@ const MakeCards = ({project, choice=1}) => {
                 }}></button>
             </div>
             </div>
-            {choice === 1 && (<button className='visit-btn'><a style={{color:"black"}} href={project.link}>VISIT PROJECT</a> </button>)}
+
+            <div>
+                {choice === 1 && (<button className='visit-btn'><a style={{color:"black"}} href={project.link}>VISIT PROJECT</a> </button>)}
+            </div>
+            
             
         </div>
         

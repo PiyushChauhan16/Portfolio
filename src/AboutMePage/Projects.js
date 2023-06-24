@@ -10,7 +10,7 @@ const Projects = () => {
     return (
     <div className='project-div'>
         <div>
-            <p className="project-heading"><strong>Projects</strong></p>
+            <p className="project-heading">Projects</p>
         </div>
         <div class = "card-arrangment">
             {listOfProjects.map ((curr)=>{
