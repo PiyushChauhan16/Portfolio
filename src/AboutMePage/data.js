@@ -56,7 +56,28 @@ const data = {
     projects:[
         {
             id: 0,
-            topic:"CompanyX DataBase Manager",
+            topic:"Apply Karo",
+            details:[
+                "Innovated a 4.5/5(rated by multiple user) web browser extension enabling users to effortlessly apply for jobs using HTML, CSS and ReactJS.",
+                "Facilitated the user to dynamically manipulate and permanently store data regarding academics, experience and personal details at one place."
+            ],
+            tech_stack:["HTML", "CSS", "React.js"] ,
+            link: "https://github.com/PiyushChauhan16/ApplyKaro-Chrome_Extension"
+        },
+        {
+            id: 1,
+            topic:"Google Keep",
+            details:[
+                "Designed  a 4.0/5 (rated by multiple user) website that organizes and manages your notes, offering a user-friendly solution for efficient information management utilizing javascript, HTML, CSS.",
+                "Architected intuitive saving, editing, and deleting and storing features, allowing users to effortlessly update and maintain their notes as desired."
+            ],
+            tech_stack:["HTML", "CSS", "JavaScript"] ,
+            link: "https://github.com/PiyushChauhan16/GoogleKeep"
+       
+        },
+        {
+            id: 3,
+            topic:"Database Buddy",
             details:[
                 "Innovated a 4.3/5(rated by multiple users) user-friendly Desktop App to create and manage databases of a firm.",
                 "Developed Query-Runner(4.1/5 - highest rated feature) along with other salient features to retrieve, create and update data.",
@@ -66,7 +87,32 @@ const data = {
             link: "https://github.com/PiyushChauhan16/tkinter/blob/main/project.py"
         },
         {
-            id: 1,
+            id: 4,
+            topic:"ChoreCraft",
+            details:[
+                "Innovated a 4.5/5(rated by multiple user) website enabling users to manage chores using HTML, CSS and ReactJS.",
+                "Facilitated the user to have dynamic managment of chores and reducing the search space for faster response."],
+            tech_stack:["HTML", "CSS", "React.js"] ,
+            link: "https://github.com/PiyushChauhan16/ChoreCraft"
+        },
+        {
+            id: 5,
+            topic:"Resturant Menu",
+            details:[
+                "Created a restaurant menu with a React-based navbar for easy access to breakfast, lunch, and dinner options. "],
+            tech_stack:["HTML", "CSS", "React.js"] ,
+            link: "https://github.com/PiyushChauhan16/ResturantMenu"
+        },
+        {
+            id: 6,
+            topic:"JS Mini Projects",
+            details:["Mini Projects for beginners"],
+            tech_stack:["HTML", "CSS", "JavaScipt"] ,
+            link: "https://github.com/PiyushChauhan16/JSBasicProjects"
+        },
+        
+        {
+            id: 4,
             topic:"WorkLoad Crunch",
             details:[
                 "Designed a 4.1/5(rated by multiple users) Object-oriented program to generate Pay-Slip and provide banking facilities.",
@@ -78,7 +124,7 @@ const data = {
 
         },
         {
-            id: 3,
+            id: 5,
             topic: "Gender Identifier",
             details: [
                 "Created a classification classifier trained on 47009 images belonging to two classes to distinguish between male and female with an accuracy of 96.01."

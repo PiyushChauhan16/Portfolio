@@ -8,6 +8,9 @@ import resume from "./images/resume.png"
 
 const Sidebar = () => {
   return (
+    <div className='sidebar-outer-div'>
+
+    
     <div class = "sidebar-div">
         <div>
             <a href = "https://drive.google.com/file/d/1q7ykIoy7gdM6OnQMlvOe9wE881-0ey1S/view?usp=sharing">
@@ -43,6 +46,7 @@ const Sidebar = () => {
         
         
         
+    </div>
     </div>
   )
 }
