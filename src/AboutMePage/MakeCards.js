@@ -5,8 +5,8 @@ const MakeCards = ({project, choice=1}) => {
   return (
     <div>
             
-        <div className={"card" + (choice === 1 ? "" : " short-card")}>
-        <div className="card1">
+        <div className={"card"}>
+        <div className={"card1" + (choice === 1 ? " long-card" : " short-card")}>
             <p className = "project-name">{project.topic}</p>
             {choice === 1 && project.tech_stack.map((curr)=>{
                 return (

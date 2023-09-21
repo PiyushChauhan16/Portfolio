@@ -81,22 +81,33 @@
   
   .card{
     /* border: solid; */
-    height: 350px;
+    /* height: 350px;
     position: relative;
     min-width: 450px;;
+    max-width: 400px;;
+    background-color: transparent;
+    border: none; */
+
+    
   }
 
   .short-card{
-    height: 230px;
+    height: 200px;
   }
 
+  .long-card {
+    height: 350px;
+  }
+  
   .card-arrangment{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 40px;
+    column-gap: 60px;
     row-gap: 80px;
     /* border: solid; */
-    padding: 50px;
+    padding: 40px;
+    padding-right: 70px;
+    
     margin-bottom: 0px;;
     /* width: 100%; */
     /* height: 300px; */
@@ -109,11 +120,13 @@
   .card1{
     /* border: solid; */
     /* position: relative; */
-    padding: 16px;
+    /* padding: 16px;
     height: 100%;
     margin:0px;
-    transition: 0.2s;
+    transition: 0.2s; */
     /* width: 1000px; */
+
+   
   }
 
   .project-name{
