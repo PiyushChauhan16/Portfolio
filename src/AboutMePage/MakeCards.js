@@ -8,11 +8,18 @@ const MakeCards = ({project, choice=1}) => {
         <div className={"card"}>
         <div className={"card1" + (choice === 1 ? " long-card" : " short-card")}>
             <p className = "project-name">{project.topic}</p>
-            {choice === 1 && project.tech_stack.map((curr)=>{
-                return (
-                    <p class = "tech-stack-list">{"• " + curr +" "}</p>
-                )
-            })}
+            <div>
+                {choice === 1 && project.tech_stack.map((curr)=>{
+                    return (
+                        <p class = "tech-stack-list">{"• " + curr +" "}</p>
+                    )
+                })}
+            </div>
+
+            <div>
+                {choice === 1 && (<a style={{color:"black", textDecoration:"none"}} href={project.link}><button className='visit-btn'>VISIT PROJECT </button></a>)}
+            </div>
+            
 
             <ul>
                 {project.details.map((curr)=>{
@@ -34,9 +41,7 @@ const MakeCards = ({project, choice=1}) => {
             </div>
             </div>
 
-            <div>
-                {choice === 1 && (<a style={{color:"black", textDecoration:"none"}} href={project.link}><button className='visit-btn'>VISIT PROJECT </button></a>)}
-            </div>
+           
             
             
         </div>

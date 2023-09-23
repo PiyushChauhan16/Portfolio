@@ -66,12 +66,13 @@ const data = {
         },
         {
             id: 1,
-            topic:"Google Keep",
+            topic:"KeepSake",
             details:[
                 "Designed  a 4.0/5 (rated by multiple user) website that organizes and manages your notes, offering a user-friendly solution for efficient information management utilizing javascript, HTML, CSS.",
+                "Implemented Django authentication in accordance with sqlite3 database to manage and ensure secure user authentication.",
                 "Architected intuitive saving, editing, and deleting and storing features, allowing users to effortlessly update and maintain their notes as desired."
             ],
-            tech_stack:["HTML", "CSS", "JavaScript"] ,
+            tech_stack:["HTML", "CSS", "JavaScript", "Django"] ,
             link: "https://github.com/PiyushChauhan16/GoogleKeep"
        
         },
@@ -83,7 +84,7 @@ const data = {
                 "Developed Query-Runner(4.1/5 - highest rated feature) along with other salient features to retrieve, create and update data.",
                 "Introduced features such as Login, Register employee , Query Runner, Assign Project, ER diagram, Online Food court.",
             ],
-            tech_stack:["Python", "SQL", "MySQL", "MySQL Workbench", "Tkinter"] ,
+            tech_stack:["Python", "SQL", "MySQL", "MySQL Workbench", "Tkinter", "OOP"] ,
             link: "https://github.com/PiyushChauhan16/tkinter/blob/main/project.py"
         },
         {
@@ -169,21 +170,22 @@ const data = {
         },
         {
             id: 4,
-            topic: "Front-End Development",
+            topic: "Web-Development",
             details: [
                 "HTML (HyperText Markup Language)",
                 "CSS (Cascading Style Sheets)",
                 "JavaScript",
-                "React.js"               
+                "React.js",
+                "Django"            
             ]
         }
 
     ],
     achivements:[
         "Earned 9.86 cgpa in 5th semester to become 2nd topper in IT department",
-        "Solved 800+ questions at leetcode",
-        "Acquired 1000+ points on GeeksforGeeks",
-        "Rated 5 Star coder at Hackerrank"
+        "Achieved 9.59 SGPA in 6th semester to be in TOP 4 of the IT department.",
+        "Published 30+ articles on leetcode with 11K+ views.",
+        "Coded 800+ questions at Leetcode and acquired 1000+ points on GeeksForGeeks."
     ],
     extra_curricular:[
         "Received D.A.V Merit Certificate for securing top 0.1 percentile marks.",
